@@ -134,7 +134,7 @@ export default {
             value: 'cat_id',
             label: 'cat_name',
             children: 'children',
-            emitPath: true,         // 是否返回选中的节点值（返回值为数组）
+            // emitPath: true,         // 是否返回选中的节点值（返回值为数组）
             checkStrictly: true,       // 是否可选任意一级
         },
         // 验证规则
@@ -216,7 +216,6 @@ export default {
         },
         // 获取选中的父级分类节点
         parentCateChanged() {
-            this.addCateForm.cat_name
             if(this.selectedKeys.length > 0) {
                 this.addCateForm.cat_level = this.selectedKeys.length
                 this.addCateForm.cat_pid = this.selectedKeys[this.selectedKeys.length - 1]
