@@ -12,6 +12,7 @@ import GoodsList from '@/views/goods/list.vue'
 import AddPage from '@/views/goods/add.vue'
 import EditPage from '@/views/goods/edit.vue'
 import Order from '@/views/order/order.vue'
+import Report from '@/views/report/report.vue'
 
 
 Vue.use(VueRouter)
@@ -70,6 +71,10 @@ const routes = [
       {
         path: '/orders',
         component: Order
+      },
+      {
+        path: '/reports',
+        component: Report
       },
     ]
   }
