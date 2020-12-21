@@ -11,6 +11,7 @@ import Params from '@/views/goods/params.vue'
 import GoodsList from '@/views/goods/list.vue'
 import AddPage from '@/views/goods/add.vue'
 import EditPage from '@/views/goods/edit.vue'
+import Order from '@/views/order/order.vue'
 
 
 Vue.use(VueRouter)
@@ -65,6 +66,10 @@ const routes = [
         path: '/goods/edit',
         component: EditPage,
         name: 'edit'
+      },
+      {
+        path: '/orders',
+        component: Order
       },
     ]
   }
